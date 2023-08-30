@@ -3,11 +3,11 @@ run-name: 🚀 Building docker image ${{ github.workflow }} by @${{ github.actor
 
 on:
   push:
-    branches:
-      - master
-    paths:
-      - "Dockerfile"
-      - ".github/workflows/docker-nginx.yml"
+    # branches:
+    #   - master
+    # paths:
+    #   - "Dockerfile"
+    #   - ".github/workflows/docker-nginx.yml"
   workflow_dispatch:
     inputs:
       trigger:
