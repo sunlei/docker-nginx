@@ -23,6 +23,8 @@ env:
 jobs:
   docker-nginx:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -53,5 +55,5 @@ jobs:
           cache-to: type=gha,mode=max
           push: true
           tags: |
-            ghcr.io/sunlei/nginx:mainline-alpine-slim,ghcr.io/sunlei/nginx:latest
+            ${{ env.REGISTRY }}/sunlei/nginx:mainline-alpine-slim,${{ env.REGISTRY }}/sunlei/nginx:latest
       - run: echo "🍏 This job's status is ${{ job.status }}."
