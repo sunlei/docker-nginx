@@ -53,5 +53,5 @@ jobs:
           cache-to: type=gha,mode=max
           push: true
           tags: |
-            sunlei/nginx:mainline-alpine-slim,sunlei/nginx:latest
+            ghcr.io/sunlei/nginx:mainline-alpine-slim,ghcr.io/sunlei/nginx:latest
       - run: echo "🍏 This job's status is ${{ job.status }}."
