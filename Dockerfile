@@ -1,4 +1,4 @@
-FROM nginx:1.27.0-alpine-slim@sha256:a529900d9252ce5d04531a4a594f93736dbbe3ec155a692d10484be82aaa159a
+FROM nginx:1.27.2-alpine-slim@sha256:e9293c9bedb0db866e7d2b69e58131db4c2478e6cd216cdd99b134830703983a
 # FROM nginx:mainline-alpine-slim
 
 COPY nginx/ /etc/nginx/
